@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+@keyframes manRunning{
+    0% { top: 200px; }
+    100% { bottom: 0px; }
+}
+@keyframes dinoRunning{
+    0% { right: 0%;}
+    100% { right: 100%; }
+}
+#container{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* background-image: url('img/bg.jpg'); */
+    background-image: url('img/20252.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+#container img{
+    width: 100%;
+    height: 100%;
+}
+.human{
+    /* border: 2px solid black; */
+    width: 140px;
+    height: 180px;
+    position: absolute;
+    bottom: 0;
+}
+.manRun{
+    animation-name: manRunning;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+.dino{
+    /* border: 1px solid black; */
+    width: 180px;
+    height: 160px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.dino img{
+    /* border: 2px solid red; */
+}
+.dinoRun{
+    animation-name: dinoRunning;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
